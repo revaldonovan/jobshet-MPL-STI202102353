@@ -1,64 +1,20 @@
 import 'package:flutter/material.dart';
-
- void main(List<String> args){
-  runApp(new MaterialApp(
-    home: new MyApp(),
-  ));
- }
- class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context){
-    return new Scaffold(
-      backgroundColor: Colors.purple[200],
-      appBar:new AppBar(
-        backgroundColor: Colors.blue[300],
-        leading: new Icon (Icons.people_outline),
-        title: new Center(
-          child:  Text(
-            "BIODATA",
-            style: new TextStyle(color: Colors.white),
-          ),
-        ),
-      ),
-      body: new Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-         new Image.asset(
-            "image/biodata.jpg",
-            width: 195.0,
-            height: 195.0,
-          ),
-          const Text(
-            "Nama  : Revaldo Novandhika",
-            style: TextStyle(
-              fontSize: 20.0,
-              color: Colors.black,),
-              textAlign: TextAlign.center,
-          ),
-              const Text(
-            "Nim  : STI202102353",
-            style:  TextStyle(
-              fontSize: 20.0,
-              color: Colors.black),
-              textAlign: TextAlign.center,
-              ),
-              const Text(
-            "Alamat  : Purwokerto Selatan",
-            style:  TextStyle(
-              fontSize: 20.0,
-              color: Colors.black),
-              textAlign: TextAlign.center,
-              ),
-              const Text(
-            "Jenis Kelamin  : Laki - Laki",
-            style:  TextStyle(
-              fontSize: 20.0,
-              color: Colors.black),
-              textAlign: TextAlign.center,
-          ),
-        ],
-      ),
-    );
-  }
-  }
+void main() => runApp(MyApp());
+class MyApp extends StatelessWidget {
+@override
+Widget build(BuildContext context) {
+return MaterialApp(
+title: 'First App',
+home: Scaffold(
+  backgroundColor: Color.fromARGB(255, 225, 51, 147),
+appBar: AppBar(
+  backgroundColor: Color.fromARGB(255, 255, 98, 0),
+title: Text('Aplikasi Flutter'),
+),
+body: Center(
+child: Text('Selamat datang di Flutter'),
+),
+),
+);
+}
+}

@@ -9,9 +9,9 @@ import 'package:flutter/material.dart';
   @override
   Widget build(BuildContext context){
     return new Scaffold(
-      backgroundColor: Colors.green[200],
+      backgroundColor: Colors.purple[200],
       appBar:new AppBar(
-        backgroundColor: Colors.green[300],
+        backgroundColor: Colors.blue[300],
         leading: new Icon (Icons.people_outline),
         title: new Center(
           child:  Text(
